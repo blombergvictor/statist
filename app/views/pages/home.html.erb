@@ -1,0 +1,162 @@
+<div class="container home">
+  <section>
+    <div class="hero_section">
+      <div class="hero_content hero">
+        <h1>
+          Nordens största <br/>casting sida
+        </h1>
+        <p>
+          Hitta jobb som statist, modell, skådespelare, TV-publik, eventpersonal och mycket mer.
+        </p>
+        <form class="" action="index.html" method="post">
+          <input type="text" name="" value="" placeholder="Email adress">
+          <input type="text" name="" value="" placeholder="Lösenord">
+          <div class="buttons">
+            <button type="button" name="button" class="btn btn_green">
+              Logga in
+            </button>
+            <button type="button" name="button" class="btn btn_facebook">
+              <i class="icon ion-social-facebook"></i>
+              Logga in med facebook
+            </button>
+          </div>
+          <span class="register">
+            Registera dig <a href="#">här</a>
+          </span>
+        </form>
+      </div>
+      <div class="hero_image hero"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="work_section">
+      <div class="intro">
+        <h2>Hitta ditt drömjobb</h2>
+        <p>
+          Gör som många andra och hitta ett yrke<br> som passar just dig.
+        </p>
+        <a href="#" class="btn">Visa alla jobb</a>
+      </div>
+      <div class="list">
+        <ul>
+          <li class="list_item">
+            <div class="list_item_content">
+              <span>Ersättning, 40.000:-</span>
+              <a href="#">
+                <h3>Vältränad, atletisk kvinna sökes! Kvinna 20-35 år till reklam för fräsig klocka!</h3>
+              </a>
+              <a href="#" class="read_more">Läs mer</a>
+            </div>
+            <div class="list_item_image">
+              <a href="#">
+                <%= image_tag('chill.jpeg') %>
+              </a>
+            </div>
+          </li>
+          <li class="list_item">
+            <div class="list_item_content">
+              <span>Ersättning, 11.000:-</span>
+              <a href="#">
+                <h3>Pappa med dotter sökes till reklamfilm för hushållsartikel</h3>
+              </a>
+              <a href="#" class="read_more">Läs mer</a>
+            </div>
+            <div class="list_item_image">
+              <a href="#">
+                <%= image_tag('dad.jpeg') %>
+              </a>
+            </div>
+          </li>
+          <li class="list_item">
+            <div class="list_item_content">
+              <span>Ersättning, 1000:-</span>
+              <a href="#">
+                <h3>Statister i alla åldrar sökes till reklamfilmsinspelning. </h3>
+              </a>
+              <a href="#" class="read_more">Läs mer</a>
+            </div>
+            <div class="list_item_image">
+              <a href="#">
+                <%= image_tag('film.jpeg') %>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+  <section>
+    <div class="movie_container">
+      <div class="movie_section">
+        <div class="movie_section_bg"></div>
+        <div class="playvideo" id="btn_play">
+          <?xml version="1.0" encoding="utf-8"?>
+          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+          <g>
+          	<path class="btn_play" d="M388.8,249L201.1,121c-2.6-1.8-6-2-8.8-0.5c-2.8,1.5-4.5,4.4-4.5,7.5v256c0,3.2,1.7,6.1,4.5,7.5
+          		c1.2,0.7,2.6,1,4,1c1.7,0,3.4-0.5,4.8-1.5l187.7-128c2.3-1.6,3.7-4.2,3.7-7C392.5,253.2,391.1,250.5,388.8,249z M204.8,367.8V144.2
+          		L368.9,256L204.8,367.8z"/>
+          	<path class="btn_play" d="M256,0C114.8,0,0,114.8,0,256s114.8,256,256,256s256-114.8,256-256S397.2,0,256,0z M256,494.9
+          		C124.3,494.9,17.1,387.7,17.1,256S124.3,17.1,256,17.1S494.9,124.3,494.9,256S387.7,494.9,256,494.9z"/>
+          </g>
+          <style type="text/css">
+          	#Capa_1, .btn_play{
+          	  fill: #FFFFFF!important;
+              stroke: #FFFFFF!important;
+              stroke-width: 0!important;
+              stroke-miterlimit: 0!important;
+            }
+          </style>
+          </svg>
+
+          <h4>
+            Statist ❤ Solsidan
+          </h4>
+        </div>
+        <%= image_tag('solsidan.jpg') %>
+      </div>
+      <div class="movie_popup">
+        <i class="icon ion-ios-close-empty" id="close_movie_popup"></i>
+        <div class="movie_popup_video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/oHjC_sKhW_I" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+<div class="container home">
+
+</div>
+
+<%= render 'layouts/footer' %>
+
+
+<script type="text/javascript">
+  var list = ["search", "country", "work", "service", "blog"];
+  list.map(function(x){
+    $("#nav_" + x).click(function(){
+      $(".menu_main_nav > a").css("color", "#959595");
+      $(".dropdown_nav_full").css("display", "none");
+      $("#nav_" + x).css("color", "#02B875");
+      $("#dropdown_" + x).show();
+    });
+  });
+
+  $(".home").click(function() {
+    $(".dropdown_nav_full").hide();
+    $(".menu_main_nav > a").css("color", "#959595");
+  });
+
+  $("#btn_play").click(function() {
+    $(".movie_popup").css("display", "block");
+  });
+
+  $("#close_movie_popup").click(function() {
+    $(".movie_popup").css("display", "none");
+  });
+
+
+</script>

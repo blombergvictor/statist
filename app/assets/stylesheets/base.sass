@@ -107,6 +107,30 @@ a
   text-decoration: none
   padding: 19px 40px 20px
 
+form.form_clean
+  .input_fields
+    margin-bottom: 10px
+    input
+      outline: none
+      width: 100%
+      padding: 10px 15px
+      font-size: $font-size-h5
+      margin-bottom: 5px
+      border-radius: $border-normal
+      border: 1px solid $details-color
+      &::-webkit-input-placeholder
+        color: $gray-color
+  .buttons
+    margin-bottom: 15px
+  .register
+    color: $gray-color
+    display: block
+    font-size: $font-size-button
+    font-style: italic
+    a
+      color: $green-color
+
+
 .base_length
   max-width: 1200px
   margin: auto
@@ -120,7 +144,35 @@ a
 .container
   @extend .base_length
 
+.popup
+  width: 100%
+  height: 100vh
+  background: $white-color
+  position: fixed
+  top: 0
+  left: 0
+  display: none
+  text-align: center
+  z-index: 999
+  overflow: auto
+.popup_content
+  display: flex
+  width: 100%
+  text-align: center
+  height: 100vh
+  align-items: center
+  padding-bottom: 50px
+.popup_close
+  position: fixed
+  top: 20px
+  left: 35px
+  font-size: $font-size-h1
+  color: $gray-color
+  cursor: pointer
 .intro
+  max-width: 550px
+  margin: auto
+  text-align: center
   h2
     font-weight: $bold
     font-size: $font-size-h2
@@ -133,6 +185,7 @@ a
 
 .mobile_navigation
   display: none
+
 
 nav, footer
   a
@@ -197,11 +250,20 @@ nav, footer
         width: 100%
         font-size: $font-size-h2
         border: none
-        padding: 15px 0 16px
+        padding: 15px 25px 16px
         outline: none
         font-weight: $light
         &::-webkit-input-placeholder
           color: $gray-color
+
+.popup_login
+  @extend .popup
+  .popup_login_content
+    @extend .popup_content
+    form.form_clean
+      max-width: 400px
+      margin: auto
+
 section
   .hero_section
     .hero
@@ -221,27 +283,6 @@ section
         color: $gray-color
       form
         padding: 0 100px 0 0
-        .input_fields
-          margin-bottom: 10px
-          input
-            outline: none
-            width: 100%
-            padding: 10px 15px
-            font-size: $font-size-h5
-            margin-bottom: 5px
-            border-radius: $border-normal
-            border: 1px solid $details-color
-            &::-webkit-input-placeholder
-              color: $gray-color
-        .buttons
-          margin-bottom: 15px
-        .register
-          color: $gray-color
-          display: block
-          font-size: $font-size-button
-          font-style: italic
-          a
-            color: $green-color
   .hero_image
     height: 550px
     background: url("https://s3.amazonaws.com/statist/home_page/water_camera.png")
@@ -252,10 +293,6 @@ section
 
 .work_section
   padding: 50px 0
-  .intro
-    max-width: 550px
-    margin: auto
-    text-align: center
   .list
     margin-top: 50px
     ul
@@ -335,31 +372,13 @@ section
       object-fit: cover
       object-position: top
   .movie_popup
-    width: 100%
-    height: 100vh
-    background: $white-color
-    position: fixed
-    top: 0
-    left: 0
-    display: none
-    text-align: center
-    z-index: 999
+    @extend .popup
     .movie_popup_video
-      display: flex
-      width: 100%
-      text-align: center
-      height: 100vh
-      align-items: center
-      padding-bottom: 50px
+      @extend .popup_content
       iframe
         margin: auto
     #close_movie_popup
-      position: fixed
-      top: 20px
-      left: 35px
-      font-size: $font-size-h1
-      color: $gray-color
-      cursor: pointer
+      @extend .popup_close
 
 .application_section
   max-width: 900px
@@ -369,8 +388,8 @@ section
     padding: 80px 0
   .application_content
     display: flex
-    align-items: center
     .intro
+      text-align: left
       p
         max-width: 340px
         padding: 0 0 20px 0
@@ -436,6 +455,7 @@ footer
         padding: 40px 0
       .application_content
         display: block
+
   nav
     .navigation
       .mobile_navigation
@@ -562,6 +582,7 @@ footer
       text-align: center
     .application_content
       display: block
+      text-align: center
       .intro
         text-align: center
         a
@@ -576,6 +597,7 @@ footer
       .primary_nav_full
         ul.footer_navigation
           display: block
+          padding: 25px 0
           li
             width: 100%
             text-align: center

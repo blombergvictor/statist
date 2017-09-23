@@ -9,7 +9,7 @@
           <p>
             Hitta jobb som statist, modell, skådespelare, TV-publik, eventpersonal och mycket mer.
           </p>
-          <form class="" action="index.html" method="post">
+          <form class="form_clean" action="index.html" method="post">
             <div class="input_fields">
               <input type="text" name="" value="" placeholder="Email adress">
               <input type="text" name="" value="" placeholder="Lösenord">
@@ -179,6 +179,14 @@
     $(".movie_popup").css("display", "none");
   });
 
+  $(".open_reg").click(function() {
+    $(".popup_login").css("display", "block");
+  });
+
+  $("#close_reg").click(function() {
+    $(".popup_login").css("display", "none");
+  });
+
   $("#open_mobile_menu").click(function() {
     $("#open_mobile_menu").css("display", "none");
     $("#close_mobile_menu").css("display", "block");
@@ -198,6 +206,7 @@
   $( document ).on( 'keydown', function ( e ) {
       if ( e.keyCode === 27 ) { // ESC
         $(".movie_popup").css("display", "none");
+        $(".popup_login").css("display", "none");
       }
   });
 

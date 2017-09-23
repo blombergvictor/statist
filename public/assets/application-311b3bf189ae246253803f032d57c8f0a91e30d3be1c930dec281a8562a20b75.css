@@ -1,0 +1,1841 @@
+/* line 2, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 7, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+body, html {
+  font-family: proxima-nova, sans-serif;
+  font-size: 100% !important;
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "pnum";
+  font-variant-numeric: proportional-nums;
+  letter-spacing: 0.7px;
+}
+
+/* line 19, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+h1, h2, h3, h4, h5, h6, span, button, a, input {
+  font-family: proxima-nova, sans-serif;
+  font-weight: normal;
+  color: #333333;
+}
+
+/* line 23, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+h1.special {
+  font-size: 4rem;
+}
+
+/* line 25, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+h1 {
+  font-size: 3rem;
+}
+
+/* line 27, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+h2 {
+  font-size: 2.3rem;
+}
+
+/* line 29, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+h3 {
+  font-size: 1.7rem;
+}
+
+/* line 31, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+h4 {
+  font-size: 1.25rem;
+}
+
+/* line 33, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+h5 {
+  font-size: 1rem;
+}
+
+/* line 35, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+h6 {
+  font-size: 0.87rem;
+}
+
+/* line 38, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+p {
+  font-family: calluna, serif;
+}
+
+/* line 41, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 45, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+#Capa_1, .btn_play {
+  fill: #FFFFFF !important;
+  stroke: #FFFFFF !important;
+  stroke-width: 0 !important;
+  stroke-miterlimit: 0 !important;
+}
+
+/* line 51, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.btn {
+  border: 1px solid #E5E5E5;
+  background: #FFFFFF;
+  padding: 10px;
+  font-family: proxima-nova, sans-serif;
+  font-size: 0.87rem;
+  border-radius: 3px;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  transition: 0.5s all;
+}
+/* line 61, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.btn:hover {
+  transition: 0.5s all;
+  color: #333333;
+  border: 1px solid #959595;
+}
+
+/* line 66, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.btn_green {
+  border: 1px solid #02B875;
+  color: #02B875;
+  transition: 0.5s all;
+}
+/* line 70, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.btn_green:hover {
+  color: #FFFFFF;
+  background: #02B875;
+  border: 1px solid #02B875;
+  transition: 0.5s all;
+}
+
+/* line 76, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.btn_with_icon {
+  transition: 0.5s all;
+  color: #959595;
+}
+/* line 79, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.btn_with_icon i {
+  margin-right: 5px;
+}
+/* line 81, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.btn_with_icon:hover {
+  color: #636363;
+  border: 1px solid #959595;
+  transition: 0.5s all;
+}
+
+/* line 86, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.text_green, .active_nav {
+  color: #02B875;
+}
+
+/* line 89, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.text_left {
+  text-align: left;
+}
+
+/* line 92, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.active_menu {
+  display: block !important;
+}
+
+/* line 95, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.call_to_action_button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: 0 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  font-family: proxima-nova, sans-serif;
+  font-size: 0.87rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 19px 40px 20px;
+}
+
+/* line 111, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+form.form_clean .input_fields {
+  margin-bottom: 10px;
+}
+/* line 113, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+form.form_clean .input_fields input {
+  outline: none;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  border: 1px solid #E5E5E5;
+}
+/* line 121, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+form.form_clean .input_fields input::-webkit-input-placeholder {
+  color: #959595;
+}
+/* line 123, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+form.form_clean .buttons {
+  margin-bottom: 15px;
+}
+/* line 125, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+form.form_clean .register {
+  color: #959595;
+  display: block;
+  font-size: 0.87rem;
+  font-style: italic;
+}
+/* line 130, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+form.form_clean .register a {
+  color: #02B875;
+}
+
+/* line 134, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.base_length, .container, nav .navigation .primary_nav_full ul.primary_nav, footer .navigation .primary_nav_full ul.primary_nav, nav .navigation .dropdown_nav_full ul.dropdown_nav, footer .navigation .dropdown_nav_full ul.dropdown_nav {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+
+/* line 139, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.flex_w {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 147, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.popup, .popup_login, .movie_container .movie_popup {
+  width: 100%;
+  height: 100vh;
+  background: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+  z-index: 999;
+  overflow: auto;
+}
+
+/* line 158, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.popup_content, .popup_login .popup_login_content, .movie_container .movie_popup .movie_popup_video {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+/* line 165, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.popup_close, .movie_container .movie_popup #close_movie_popup {
+  position: fixed;
+  top: 20px;
+  left: 35px;
+  font-size: 3rem;
+  color: #959595;
+  cursor: pointer;
+}
+
+/* line 172, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.intro {
+  max-width: 550px;
+  margin: auto;
+  text-align: center;
+}
+/* line 176, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.intro h2 {
+  font-weight: 700;
+  font-size: 2.3rem;
+  margin-bottom: 22px;
+}
+/* line 180, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.intro p {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: #959595;
+  padding: 0 20px 20px;
+}
+
+/* line 186, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.mobile_navigation {
+  display: none;
+}
+
+/* line 191, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav a, footer a {
+  font-size: 0.9rem;
+  color: #959595;
+  transition: 0.5s color;
+}
+/* line 195, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav a:hover, footer a:hover {
+  transition: 0.5s color;
+  color: #636363;
+}
+/* line 199, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full, footer .navigation .primary_nav_full {
+  border-bottom: 1px solid #E5E5E5;
+  padding: 15px;
+}
+/* line 202, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav, footer .navigation .primary_nav_full ul.primary_nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* line 207, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav li, footer .navigation .primary_nav_full ul.primary_nav li {
+  width: 33%;
+}
+/* line 210, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav .menu_main_nav a, footer .navigation .primary_nav_full ul.primary_nav .menu_main_nav a {
+  margin-right: 15px;
+}
+/* line 212, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav .menu_main_nav #nav_search, footer .navigation .primary_nav_full ul.primary_nav .menu_main_nav #nav_search {
+  font-size: 1rem;
+}
+/* line 214, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav li.logo, footer .navigation .primary_nav_full ul.primary_nav li.logo {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 70px;
+}
+/* line 220, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav li.logo a, footer .navigation .primary_nav_full ul.primary_nav li.logo a {
+  margin: auto;
+}
+/* line 222, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav li.logo svg.static_logo, footer .navigation .primary_nav_full ul.primary_nav li.logo svg.static_logo {
+  width: 160px;
+  z-index: 999;
+  padding: 3px;
+}
+/* line 226, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav li.call_to_action, footer .navigation .primary_nav_full ul.primary_nav li.call_to_action {
+  text-align: right;
+}
+/* line 228, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav li.call_to_action a, footer .navigation .primary_nav_full ul.primary_nav li.call_to_action a {
+  margin-left: 15px;
+}
+/* line 230, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .dropdown_nav_full, footer .navigation .dropdown_nav_full {
+  border-bottom: 1px solid #E5E5E5;
+  display: none;
+}
+/* line 233, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .dropdown_nav_full ul.dropdown_nav, footer .navigation .dropdown_nav_full ul.dropdown_nav {
+  display: flex;
+}
+/* line 236, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .dropdown_nav_full ul.dropdown_nav a, footer .navigation .dropdown_nav_full ul.dropdown_nav a {
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 30px 0;
+  text-transform: uppercase;
+  position: relative;
+  border-bottom: 1px solid transparent;
+}
+/* line 244, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .dropdown_nav_full ul.dropdown_nav a:hover, footer .navigation .dropdown_nav_full ul.dropdown_nav a:hover {
+  border-bottom: 1px solid #02B875;
+  color: #02B875;
+}
+/* line 249, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation #dropdown_search input, footer .navigation #dropdown_search input {
+  width: 100%;
+  font-size: 2.3rem;
+  border: none;
+  padding: 15px 25px 16px;
+  outline: none;
+  font-weight: 300;
+}
+/* line 256, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation #dropdown_search input::-webkit-input-placeholder, footer .navigation #dropdown_search input::-webkit-input-placeholder {
+  color: #959595;
+}
+
+/* line 263, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.popup_login .popup_login_content form.form_clean {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* line 269, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+section .hero_section .hero {
+  width: 50%;
+}
+/* line 271, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+section .hero_section .hero_content {
+  padding-right: 50px;
+}
+/* line 273, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+section .hero_section .hero_content h1 {
+  margin-top: 100px;
+  font-size: 3.6rem;
+  line-height: 4rem;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+/* line 279, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+section .hero_section .hero_content p {
+  margin-bottom: 30px;
+  font-size: 1.7rem;
+  line-height: 2.55rem;
+  color: #959595;
+}
+/* line 284, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+section .hero_section .hero_content form {
+  padding: 0 100px 0 0;
+}
+/* line 286, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+section .hero_image {
+  height: 550px;
+  background: url("https://s3.amazonaws.com/statist/home_page/water_camera.png");
+  background-position: center;
+  background-size: cover;
+  margin: 50px 0;
+}
+
+/* line 294, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section {
+  padding: 50px 0;
+}
+/* line 296, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list {
+  margin-top: 50px;
+}
+/* line 298, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul {
+  display: flex;
+}
+/* line 300, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul .list_item {
+  width: calc(33.3333% - 30px);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  border-radius: 3px;
+  position: relative;
+  height: 400px;
+  transition: 0.5s all;
+}
+/* line 308, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul .list_item:hover {
+  transition: 0.5s all;
+  transform: scale(1.04);
+}
+/* line 311, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul .list_item .list_item_content {
+  padding: 25px;
+}
+/* line 313, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul .list_item .list_item_content span {
+  text-transform: uppercase;
+  font-size: 0.87rem;
+  color: #959595;
+  display: block;
+  margin: 5px 0 10px;
+}
+/* line 320, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul .list_item .list_item_content a h3 {
+  font-family: calluna, serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 10px;
+}
+/* line 325, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul .list_item .list_item_content a.read_more {
+  color: #959595;
+}
+/* line 327, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul .list_item .list_item_image {
+  height: 220px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+/* line 332, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul .list_item .list_item_image img {
+  border-radius: 0 0 3px 3px;
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* line 340, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.movie_container {
+  margin: 50px 0;
+}
+/* line 342, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.movie_container .movie_section {
+  width: 100%;
+  height: 420px;
+  position: relative;
+}
+/* line 346, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.movie_container .movie_section .playvideo {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/* line 353, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.movie_container .movie_section .playvideo svg {
+  width: 65px;
+  padding: 10px;
+}
+/* line 356, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.movie_container .movie_section .playvideo h4 {
+  color: #FFFFFF;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+}
+/* line 362, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.movie_container .movie_section .movie_section_bg {
+  width: 100%;
+  height: 420px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, black, transparent 85%);
+}
+/* line 369, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.movie_container .movie_section img {
+  height: 420px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+/* line 378, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.movie_container .movie_popup .movie_popup_video iframe {
+  margin: auto;
+}
+
+/* line 383, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section {
+  max-width: 900px;
+  margin: auto;
+}
+/* line 386, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section .half {
+  width: 50%;
+  padding: 80px 0;
+}
+/* line 389, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section .application_content {
+  display: flex;
+}
+/* line 391, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section .application_content .intro {
+  text-align: left;
+}
+/* line 393, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section .application_content .intro p {
+  max-width: 340px;
+  padding: 0 0 20px 0;
+}
+/* line 396, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section .application_content .intro ul {
+  list-style: disc;
+  padding: 0 0 20px 20px;
+}
+/* line 399, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section .application_content .intro ul li {
+  font-family: calluna, serif;
+  margin: 15px 0;
+  font-size: 1rem;
+}
+/* line 403, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section .application_image {
+  text-align: left;
+  padding-left: 25px;
+}
+/* line 406, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section .application_image img {
+  max-height: 520px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* line 414, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+footer nav .navigation .primary_nav_full {
+  border-bottom: 0;
+  border-top: 1px solid #E5E5E5;
+}
+/* line 418, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+footer nav .navigation .primary_nav_full .logo svg {
+  height: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  /* line 423, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .container {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  /* line 428, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  section .hero_section {
+    display: block;
+  }
+  /* line 430, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  section .hero_section .hero {
+    width: 100%;
+  }
+  /* line 433, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  section .hero_section .hero_content h1 {
+    margin-top: 50px;
+  }
+  /* line 435, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  section .hero_section .hero_image {
+    display: none;
+  }
+
+  /* line 439, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .work_section .list ul {
+    display: block;
+  }
+  /* line 441, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .work_section .list ul .list_item {
+    width: calc(100% - 100px);
+    margin: 50px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  /* line 446, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .home {
+    padding-top: 81px;
+  }
+
+  /* line 448, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .primary_navigation {
+    display: none;
+  }
+  /* line 450, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .primary_navigation .application_section {
+    display: block;
+  }
+  /* line 452, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .primary_navigation .application_section .half {
+    width: calc(100% - 100px);
+    margin: 0 50px;
+    padding: 40px 0;
+  }
+  /* line 456, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .primary_navigation .application_section .application_content {
+    display: block;
+  }
+
+  /* line 461, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_navigation {
+    display: flex;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    z-index: 9;
+  }
+  /* line 470, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_navigation ul.primary_nav {
+    padding: 5px 15px;
+  }
+  /* line 472, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_navigation ul.primary_nav li.logo {
+    text-align: left;
+    display: block;
+    margin-right: auto;
+  }
+  /* line 476, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_navigation ul.primary_nav li.logo a {
+    margin: 0 !important;
+  }
+  /* line 478, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_navigation ul.primary_nav li.logo a svg.static_logo {
+    width: auto !important;
+    height: 70px;
+  }
+  /* line 481, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_navigation ul.primary_nav li.call_to_action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 66%;
+  }
+  /* line 486, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_navigation ul.primary_nav li.call_to_action a.burger_menu {
+    padding: 10px;
+    font-size: 1.35rem;
+    width: 25px;
+    text-align: center;
+  }
+  /* line 491, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_navigation ul.primary_nav li.call_to_action #close_mobile_menu {
+    display: none;
+    font-size: 1.25rem;
+  }
+  /* line 494, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_friendly {
+    display: block;
+  }
+  /* line 496, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_menu {
+    width: 100%;
+    height: 100vh;
+    background: #FFFFFF;
+    display: none;
+    padding: 0;
+  }
+  /* line 502, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_menu #nav_country, nav .navigation .mobile_menu #nav_search {
+    display: none;
+  }
+  /* line 504, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_menu .search_mobile {
+    position: relative;
+  }
+  /* line 506, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_menu .search_mobile input {
+    width: 100%;
+    padding: 15px 20px 15px 50px;
+    font-size: 1.35rem;
+    color: #959595;
+    font-weight: 300;
+    outline: none;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    border-right: 0;
+    border-left: 0;
+  }
+  /* line 517, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_menu .search_mobile i {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    color: #959595;
+  }
+  /* line 522, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_menu a {
+    width: 100%;
+    display: block;
+    padding: 15px 25px;
+    font-size: 1.35rem;
+    border-bottom: 1px solid #E5E5E5;
+    font-weight: 300;
+  }
+  /* line 529, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_sign_up {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #02B875;
+  }
+  /* line 535, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_sign_up a {
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+}
+@media only screen and (max-width: 580px) {
+  /* line 545, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  section .hero_section .hero_content {
+    padding-right: 0;
+  }
+  /* line 547, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  section .hero_section .hero_content form {
+    padding-right: 0;
+  }
+
+  /* line 553, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .work_section .list ul .list_item {
+    width: calc(100% - 20px);
+    margin: 20px 10px;
+  }
+  /* line 556, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .work_section .list ul .list_item:hover {
+    transform: none;
+  }
+
+  /* line 559, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .movie_container .movie_popup {
+    padding: 20px;
+  }
+  /* line 562, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .movie_container .movie_popup #close_movie_popup {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    top: auto;
+    background: #FFFFFF;
+    border-top: 1px solid #E5E5E5;
+  }
+  /* line 570, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .movie_container .movie_section .playvideo {
+    top: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* line 577, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .application_section {
+    display: block;
+  }
+  /* line 579, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .application_section .half {
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+  }
+  /* line 583, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .application_section .application_content {
+    display: block;
+    text-align: center;
+  }
+  /* line 586, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .application_section .application_content .intro {
+    text-align: center;
+  }
+  /* line 588, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .application_section .application_content .intro a {
+    margin: 5px 0;
+  }
+  /* line 590, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .application_section .application_content .intro p {
+    margin: auto;
+  }
+  /* line 592, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .application_section .application_content .intro ul {
+    padding: 0 0 20px 0;
+    list-style: none;
+  }
+
+  /* line 598, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  footer .navigation .primary_nav_full ul.footer_navigation {
+    display: block;
+    padding: 25px 0;
+  }
+  /* line 601, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  footer .navigation .primary_nav_full ul.footer_navigation li {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+  /* line 606, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  footer .navigation .primary_nav_full ul.footer_navigation li.menu_main_nav a {
+    font-size: 1.25rem;
+    margin: 0 25px;
+  }
+  /* line 609, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  footer .navigation .primary_nav_full ul.footer_navigation li.call_to_action {
+    text-align: center;
+  }
+  /* line 611, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  footer .navigation .primary_nav_full ul.footer_navigation li.logo {
+    height: auto;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/reset.css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/reset.css */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/reset.css */
+body {
+  line-height: 1;
+}
+
+/* line 34, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/reset.css */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/reset.css */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/reset.css */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/reset.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 2, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 7, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+body, html {
+  font-family: proxima-nova, sans-serif;
+  font-size: 100% !important;
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "pnum";
+  font-variant-numeric: proportional-nums;
+  letter-spacing: 0.7px;
+}
+
+/* line 19, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+h1, h2, h3, h4, h5, h6, span, button, a, input {
+  font-family: proxima-nova, sans-serif;
+  font-weight: normal;
+  color: #333333;
+}
+
+/* line 23, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+h1.special {
+  font-size: 4rem;
+}
+
+/* line 25, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+h1 {
+  font-size: 3rem;
+}
+
+/* line 27, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+h2 {
+  font-size: 2.3rem;
+}
+
+/* line 29, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+h3 {
+  font-size: 1.7rem;
+}
+
+/* line 31, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+h4 {
+  font-size: 1.25rem;
+}
+
+/* line 33, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+h5 {
+  font-size: 1rem;
+}
+
+/* line 35, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+h6 {
+  font-size: 0.87rem;
+}
+
+/* line 38, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+p {
+  font-family: calluna, serif;
+}
+
+/* line 41, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 45, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+#Capa_1, .btn_play {
+  fill: #FFFFFF !important;
+  stroke: #FFFFFF !important;
+  stroke-width: 0 !important;
+  stroke-miterlimit: 0 !important;
+}
+
+/* line 51, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.btn {
+  border: 1px solid #E5E5E5;
+  background: #FFFFFF;
+  padding: 10px;
+  font-family: proxima-nova, sans-serif;
+  font-size: 0.87rem;
+  border-radius: 3px;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  transition: 0.5s all;
+}
+/* line 61, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.btn:hover {
+  transition: 0.5s all;
+  color: #333333;
+  border: 1px solid #959595;
+}
+
+/* line 66, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.btn_green {
+  border: 1px solid #02B875;
+  color: #02B875;
+  transition: 0.5s all;
+}
+/* line 70, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.btn_green:hover {
+  color: #FFFFFF;
+  background: #02B875;
+  border: 1px solid #02B875;
+  transition: 0.5s all;
+}
+
+/* line 76, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.btn_with_icon {
+  transition: 0.5s all;
+  color: #959595;
+}
+/* line 79, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.btn_with_icon i {
+  margin-right: 5px;
+}
+/* line 81, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.btn_with_icon:hover {
+  color: #636363;
+  border: 1px solid #959595;
+  transition: 0.5s all;
+}
+
+/* line 86, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.text_green, .active_nav {
+  color: #02B875;
+}
+
+/* line 89, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.text_left {
+  text-align: left;
+}
+
+/* line 92, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.active_menu {
+  display: block !important;
+}
+
+/* line 95, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.call_to_action_button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: 0 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  font-family: proxima-nova, sans-serif;
+  font-size: 0.87rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 19px 40px 20px;
+}
+
+/* line 111, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+form.form_clean .input_fields {
+  margin-bottom: 10px;
+}
+/* line 113, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+form.form_clean .input_fields input {
+  outline: none;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  border: 1px solid #E5E5E5;
+}
+/* line 121, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+form.form_clean .input_fields input::-webkit-input-placeholder {
+  color: #959595;
+}
+/* line 123, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+form.form_clean .buttons {
+  margin-bottom: 15px;
+}
+/* line 125, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+form.form_clean .register {
+  color: #959595;
+  display: block;
+  font-size: 0.87rem;
+  font-style: italic;
+}
+/* line 130, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+form.form_clean .register a {
+  color: #02B875;
+}
+
+/* line 134, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.base_length, .container, nav .navigation .primary_nav_full ul.primary_nav, footer .navigation .primary_nav_full ul.primary_nav, nav .navigation .dropdown_nav_full ul.dropdown_nav, footer .navigation .dropdown_nav_full ul.dropdown_nav {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+
+/* line 139, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.flex_w {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 147, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.popup, .popup_login, .movie_container .movie_popup {
+  width: 100%;
+  height: 100vh;
+  background: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+  z-index: 999;
+  overflow: auto;
+}
+
+/* line 158, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.popup_content, .popup_login .popup_login_content, .movie_container .movie_popup .movie_popup_video {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+/* line 165, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.popup_close, .movie_container .movie_popup #close_movie_popup {
+  position: fixed;
+  top: 20px;
+  left: 35px;
+  font-size: 3rem;
+  color: #959595;
+  cursor: pointer;
+}
+
+/* line 172, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.intro {
+  max-width: 550px;
+  margin: auto;
+  text-align: center;
+}
+/* line 176, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.intro h2 {
+  font-weight: 700;
+  font-size: 2.3rem;
+  margin-bottom: 22px;
+}
+/* line 180, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.intro p {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: #959595;
+  padding: 0 20px 20px;
+}
+
+/* line 186, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.mobile_navigation {
+  display: none;
+}
+
+/* line 191, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav a, footer a {
+  font-size: 0.9rem;
+  color: #959595;
+  transition: 0.5s color;
+}
+/* line 195, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav a:hover, footer a:hover {
+  transition: 0.5s color;
+  color: #636363;
+}
+/* line 199, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full, footer .navigation .primary_nav_full {
+  border-bottom: 1px solid #E5E5E5;
+  padding: 15px;
+}
+/* line 202, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav, footer .navigation .primary_nav_full ul.primary_nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* line 207, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav li, footer .navigation .primary_nav_full ul.primary_nav li {
+  width: 33%;
+}
+/* line 210, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav .menu_main_nav a, footer .navigation .primary_nav_full ul.primary_nav .menu_main_nav a {
+  margin-right: 15px;
+}
+/* line 212, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav .menu_main_nav #nav_search, footer .navigation .primary_nav_full ul.primary_nav .menu_main_nav #nav_search {
+  font-size: 1rem;
+}
+/* line 214, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav li.logo, footer .navigation .primary_nav_full ul.primary_nav li.logo {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 70px;
+}
+/* line 220, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav li.logo a, footer .navigation .primary_nav_full ul.primary_nav li.logo a {
+  margin: auto;
+}
+/* line 222, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav li.logo svg.static_logo, footer .navigation .primary_nav_full ul.primary_nav li.logo svg.static_logo {
+  width: 160px;
+  z-index: 999;
+  padding: 3px;
+}
+/* line 226, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav li.call_to_action, footer .navigation .primary_nav_full ul.primary_nav li.call_to_action {
+  text-align: right;
+}
+/* line 228, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .primary_nav_full ul.primary_nav li.call_to_action a, footer .navigation .primary_nav_full ul.primary_nav li.call_to_action a {
+  margin-left: 15px;
+}
+/* line 230, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .dropdown_nav_full, footer .navigation .dropdown_nav_full {
+  border-bottom: 1px solid #E5E5E5;
+  display: none;
+}
+/* line 233, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .dropdown_nav_full ul.dropdown_nav, footer .navigation .dropdown_nav_full ul.dropdown_nav {
+  display: flex;
+}
+/* line 236, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .dropdown_nav_full ul.dropdown_nav a, footer .navigation .dropdown_nav_full ul.dropdown_nav a {
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 30px 0;
+  text-transform: uppercase;
+  position: relative;
+  border-bottom: 1px solid transparent;
+}
+/* line 244, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation .dropdown_nav_full ul.dropdown_nav a:hover, footer .navigation .dropdown_nav_full ul.dropdown_nav a:hover {
+  border-bottom: 1px solid #02B875;
+  color: #02B875;
+}
+/* line 249, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation #dropdown_search input, footer .navigation #dropdown_search input {
+  width: 100%;
+  font-size: 2.3rem;
+  border: none;
+  padding: 15px 25px 16px;
+  outline: none;
+  font-weight: 300;
+}
+/* line 256, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+nav .navigation #dropdown_search input::-webkit-input-placeholder, footer .navigation #dropdown_search input::-webkit-input-placeholder {
+  color: #959595;
+}
+
+/* line 263, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.popup_login .popup_login_content form.form_clean {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* line 269, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+section .hero_section .hero {
+  width: 50%;
+}
+/* line 271, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+section .hero_section .hero_content {
+  padding-right: 50px;
+}
+/* line 273, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+section .hero_section .hero_content h1 {
+  margin-top: 100px;
+  font-size: 3.6rem;
+  line-height: 4rem;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+/* line 279, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+section .hero_section .hero_content p {
+  margin-bottom: 30px;
+  font-size: 1.7rem;
+  line-height: 2.55rem;
+  color: #959595;
+}
+/* line 284, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+section .hero_section .hero_content form {
+  padding: 0 100px 0 0;
+}
+/* line 286, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+section .hero_image {
+  height: 550px;
+  background: url("https://s3.amazonaws.com/statist/home_page/water_camera.png");
+  background-position: center;
+  background-size: cover;
+  margin: 50px 0;
+}
+
+/* line 294, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section {
+  padding: 50px 0;
+}
+/* line 296, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list {
+  margin-top: 50px;
+}
+/* line 298, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul {
+  display: flex;
+}
+/* line 300, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul .list_item {
+  width: calc(33.3333% - 30px);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  border-radius: 3px;
+  position: relative;
+  height: 400px;
+  transition: 0.5s all;
+}
+/* line 308, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul .list_item:hover {
+  transition: 0.5s all;
+  transform: scale(1.04);
+}
+/* line 311, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul .list_item .list_item_content {
+  padding: 25px;
+}
+/* line 313, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul .list_item .list_item_content span {
+  text-transform: uppercase;
+  font-size: 0.87rem;
+  color: #959595;
+  display: block;
+  margin: 5px 0 10px;
+}
+/* line 320, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul .list_item .list_item_content a h3 {
+  font-family: calluna, serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 10px;
+}
+/* line 325, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul .list_item .list_item_content a.read_more {
+  color: #959595;
+}
+/* line 327, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul .list_item .list_item_image {
+  height: 220px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+/* line 332, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.work_section .list ul .list_item .list_item_image img {
+  border-radius: 0 0 3px 3px;
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* line 340, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.movie_container {
+  margin: 50px 0;
+}
+/* line 342, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.movie_container .movie_section {
+  width: 100%;
+  height: 420px;
+  position: relative;
+}
+/* line 346, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.movie_container .movie_section .playvideo {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/* line 353, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.movie_container .movie_section .playvideo svg {
+  width: 65px;
+  padding: 10px;
+}
+/* line 356, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.movie_container .movie_section .playvideo h4 {
+  color: #FFFFFF;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+}
+/* line 362, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.movie_container .movie_section .movie_section_bg {
+  width: 100%;
+  height: 420px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, black, transparent 85%);
+}
+/* line 369, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.movie_container .movie_section img {
+  height: 420px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+/* line 378, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.movie_container .movie_popup .movie_popup_video iframe {
+  margin: auto;
+}
+
+/* line 383, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section {
+  max-width: 900px;
+  margin: auto;
+}
+/* line 386, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section .half {
+  width: 50%;
+  padding: 80px 0;
+}
+/* line 389, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section .application_content {
+  display: flex;
+}
+/* line 391, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section .application_content .intro {
+  text-align: left;
+}
+/* line 393, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section .application_content .intro p {
+  max-width: 340px;
+  padding: 0 0 20px 0;
+}
+/* line 396, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section .application_content .intro ul {
+  list-style: disc;
+  padding: 0 0 20px 20px;
+}
+/* line 399, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section .application_content .intro ul li {
+  font-family: calluna, serif;
+  margin: 15px 0;
+  font-size: 1rem;
+}
+/* line 403, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section .application_image {
+  text-align: left;
+  padding-left: 25px;
+}
+/* line 406, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+.application_section .application_image img {
+  max-height: 520px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* line 414, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+footer nav .navigation .primary_nav_full {
+  border-bottom: 0;
+  border-top: 1px solid #E5E5E5;
+}
+/* line 418, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+footer nav .navigation .primary_nav_full .logo svg {
+  height: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  /* line 423, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .container {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  /* line 428, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  section .hero_section {
+    display: block;
+  }
+  /* line 430, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  section .hero_section .hero {
+    width: 100%;
+  }
+  /* line 433, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  section .hero_section .hero_content h1 {
+    margin-top: 50px;
+  }
+  /* line 435, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  section .hero_section .hero_image {
+    display: none;
+  }
+
+  /* line 439, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .work_section .list ul {
+    display: block;
+  }
+  /* line 441, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .work_section .list ul .list_item {
+    width: calc(100% - 100px);
+    margin: 50px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  /* line 446, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .home {
+    padding-top: 81px;
+  }
+
+  /* line 448, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .primary_navigation {
+    display: none;
+  }
+  /* line 450, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .primary_navigation .application_section {
+    display: block;
+  }
+  /* line 452, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .primary_navigation .application_section .half {
+    width: calc(100% - 100px);
+    margin: 0 50px;
+    padding: 40px 0;
+  }
+  /* line 456, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .primary_navigation .application_section .application_content {
+    display: block;
+  }
+
+  /* line 461, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_navigation {
+    display: flex;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    z-index: 9;
+  }
+  /* line 470, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_navigation ul.primary_nav {
+    padding: 5px 15px;
+  }
+  /* line 472, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_navigation ul.primary_nav li.logo {
+    text-align: left;
+    display: block;
+    margin-right: auto;
+  }
+  /* line 476, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_navigation ul.primary_nav li.logo a {
+    margin: 0 !important;
+  }
+  /* line 478, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_navigation ul.primary_nav li.logo a svg.static_logo {
+    width: auto !important;
+    height: 70px;
+  }
+  /* line 481, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_navigation ul.primary_nav li.call_to_action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 66%;
+  }
+  /* line 486, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_navigation ul.primary_nav li.call_to_action a.burger_menu {
+    padding: 10px;
+    font-size: 1.35rem;
+    width: 25px;
+    text-align: center;
+  }
+  /* line 491, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_navigation ul.primary_nav li.call_to_action #close_mobile_menu {
+    display: none;
+    font-size: 1.25rem;
+  }
+  /* line 494, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_friendly {
+    display: block;
+  }
+  /* line 496, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_menu {
+    width: 100%;
+    height: 100vh;
+    background: #FFFFFF;
+    display: none;
+    padding: 0;
+  }
+  /* line 502, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_menu #nav_country, nav .navigation .mobile_menu #nav_search {
+    display: none;
+  }
+  /* line 504, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_menu .search_mobile {
+    position: relative;
+  }
+  /* line 506, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_menu .search_mobile input {
+    width: 100%;
+    padding: 15px 20px 15px 50px;
+    font-size: 1.35rem;
+    color: #959595;
+    font-weight: 300;
+    outline: none;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    border-right: 0;
+    border-left: 0;
+  }
+  /* line 517, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_menu .search_mobile i {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    color: #959595;
+  }
+  /* line 522, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_menu a {
+    width: 100%;
+    display: block;
+    padding: 15px 25px;
+    font-size: 1.35rem;
+    border-bottom: 1px solid #E5E5E5;
+    font-weight: 300;
+  }
+  /* line 529, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_sign_up {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #02B875;
+  }
+  /* line 535, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  nav .navigation .mobile_sign_up a {
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+}
+@media only screen and (max-width: 580px) {
+  /* line 545, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  section .hero_section .hero_content {
+    padding-right: 0;
+  }
+  /* line 547, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  section .hero_section .hero_content form {
+    padding-right: 0;
+  }
+
+  /* line 553, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .work_section .list ul .list_item {
+    width: calc(100% - 20px);
+    margin: 20px 10px;
+  }
+  /* line 556, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .work_section .list ul .list_item:hover {
+    transform: none;
+  }
+
+  /* line 559, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .movie_container .movie_popup {
+    padding: 20px;
+  }
+  /* line 562, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .movie_container .movie_popup #close_movie_popup {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    top: auto;
+    background: #FFFFFF;
+    border-top: 1px solid #E5E5E5;
+  }
+  /* line 570, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .movie_container .movie_section .playvideo {
+    top: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* line 577, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .application_section {
+    display: block;
+  }
+  /* line 579, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .application_section .half {
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+  }
+  /* line 583, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .application_section .application_content {
+    display: block;
+    text-align: center;
+  }
+  /* line 586, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .application_section .application_content .intro {
+    text-align: center;
+  }
+  /* line 588, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .application_section .application_content .intro a {
+    margin: 5px 0;
+  }
+  /* line 590, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .application_section .application_content .intro p {
+    margin: auto;
+  }
+  /* line 592, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  .application_section .application_content .intro ul {
+    padding: 0 0 20px 0;
+    list-style: none;
+  }
+
+  /* line 598, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  footer .navigation .primary_nav_full ul.footer_navigation {
+    display: block;
+    padding: 25px 0;
+  }
+  /* line 601, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  footer .navigation .primary_nav_full ul.footer_navigation li {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+  /* line 606, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  footer .navigation .primary_nav_full ul.footer_navigation li.menu_main_nav a {
+    font-size: 1.25rem;
+    margin: 0 25px;
+  }
+  /* line 609, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  footer .navigation .primary_nav_full ul.footer_navigation li.call_to_action {
+    text-align: center;
+  }
+  /* line 611, /Users/victorblomberg/sites/Statist/app/assets/stylesheets/base.sass */
+  footer .navigation .primary_nav_full ul.footer_navigation li.logo {
+    height: auto;
+  }
+}

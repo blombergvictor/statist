@@ -426,6 +426,16 @@ footer
 @media only screen and (max-width: 720px)
   .home
     padding-top: 81px
+  .primary_navigation
+    display: none
+    .application_section
+      display: block
+      .half
+        width: calc(100% - 100px)
+        margin: 0 50px
+        padding: 40px 0
+      .application_content
+        display: block
   nav
     .navigation
       .mobile_navigation
@@ -508,16 +518,7 @@ footer
           font-weight: $bold
           color: $white-color
           text-transform: uppercase
-.primary_navigation
-  display: none
-  .application_section
-    display: block
-    .half
-      width: calc(100% - 100px)
-      margin: 0 50px
-      padding: 40px 0
-    .application_content
-      display: block
+
 @media only screen and (max-width: 580px)
   section
     .hero_section

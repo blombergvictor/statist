@@ -1,93 +1,96 @@
-<div class="container home">
-  <section>
-    <div class="hero_section">
-      <div class="hero_content hero">
-        <h1>
-          Nordens största <br/>casting sida
-        </h1>
-        <p>
-          Hitta jobb som statist, modell, skådespelare, TV-publik, eventpersonal och mycket mer.
-        </p>
-        <form class="" action="index.html" method="post">
-          <input type="text" name="" value="" placeholder="Email adress">
-          <input type="text" name="" value="" placeholder="Lösenord">
-          <div class="buttons">
-            <button type="button" name="button" class="btn btn_green">
-              Logga in
-            </button>
-            <button type="button" name="button" class="btn btn_facebook">
-              <i class="icon ion-social-facebook"></i>
-              Logga in med facebook
-            </button>
-          </div>
-          <span class="register">
-            Registera dig <a href="#">här</a>
-          </span>
-        </form>
+<main>
+  <div class="container">
+    <section>
+      <div class="hero_section flex_w">
+        <div class="hero_content hero">
+          <h1>
+            Nordens största <br/>casting sida
+          </h1>
+          <p>
+            Hitta jobb som statist, modell, skådespelare, TV-publik, eventpersonal och mycket mer.
+          </p>
+          <form class="" action="index.html" method="post">
+            <div class="input_fields">
+              <input type="text" name="" value="" placeholder="Email adress">
+              <input type="text" name="" value="" placeholder="Lösenord">
+            </div>
+            <div class="buttons">
+              <button type="button" name="button" class="btn btn_green">
+                Logga in
+              </button>
+              <button type="button" name="button" class="btn btn_with_icon">
+                <i class="icon ion-social-facebook"></i>
+                Logga in med facebook
+              </button>
+            </div>
+            <span class="register">
+              Registera dig <a href="#">här</a>
+            </span>
+          </form>
+        </div>
+        <div class="hero_image hero"></div>
       </div>
-      <div class="hero_image hero"></div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="work_section">
-      <div class="intro">
-        <h2>Hitta ditt drömjobb</h2>
-        <p>
-          Gör som många andra och hitta ett yrke<br> som passar just dig.
-        </p>
-        <a href="#" class="btn">Visa alla jobb</a>
+    <section>
+      <div class="work_section">
+        <div class="intro">
+          <h2>Hitta ditt drömjobb</h2>
+          <p>
+            Gör som många andra och hitta ett yrke<br> som passar just dig.
+          </p>
+          <a href="#" class="btn">Visa alla jobb</a>
+        </div>
+        <div class="list">
+          <ul>
+            <li class="list_item">
+              <div class="list_item_content">
+                <span>Ersättning, 40.000:-</span>
+                <a href="#">
+                  <h3>Vältränad, atletisk kvinna sökes! Kvinna 20-35 år till reklam för fräsig klocka!</h3>
+                </a>
+                <a href="#" class="read_more">Läs mer</a>
+              </div>
+              <div class="list_item_image">
+                <a href="#">
+                  <%= image_tag('https://s3.amazonaws.com/statist/home_page/chill.jpeg') %>
+                </a>
+              </div>
+            </li>
+            <li class="list_item">
+              <div class="list_item_content">
+                <span>Ersättning, 11.000:-</span>
+                <a href="#">
+                  <h3>Pappa med dotter sökes till reklamfilm för hushållsartikel</h3>
+                </a>
+                <a href="#" class="read_more">Läs mer</a>
+              </div>
+              <div class="list_item_image">
+                <a href="#">
+                  <%= image_tag('https://s3.amazonaws.com/statist/home_page/dad.jpeg') %>
+                </a>
+              </div>
+            </li>
+            <li class="list_item">
+              <div class="list_item_content">
+                <span>Ersättning, 1000:-</span>
+                <a href="#">
+                  <h3>Statister i alla åldrar sökes till reklamfilmsinspelning. </h3>
+                </a>
+                <a href="#" class="read_more">Läs mer</a>
+              </div>
+              <div class="list_item_image">
+                <a href="#">
+                  <%= image_tag('https://s3.amazonaws.com/statist/home_page/film.jpeg') %>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="list">
-        <ul>
-          <li class="list_item">
-            <div class="list_item_content">
-              <span>Ersättning, 40.000:-</span>
-              <a href="#">
-                <h3>Vältränad, atletisk kvinna sökes! Kvinna 20-35 år till reklam för fräsig klocka!</h3>
-              </a>
-              <a href="#" class="read_more">Läs mer</a>
-            </div>
-            <div class="list_item_image">
-              <a href="#">
-                <%= image_tag('https://s3.amazonaws.com/statist/home_page/chill.jpeg') %>
-              </a>
-            </div>
-          </li>
-          <li class="list_item">
-            <div class="list_item_content">
-              <span>Ersättning, 11.000:-</span>
-              <a href="#">
-                <h3>Pappa med dotter sökes till reklamfilm för hushållsartikel</h3>
-              </a>
-              <a href="#" class="read_more">Läs mer</a>
-            </div>
-            <div class="list_item_image">
-              <a href="#">
-                <%= image_tag('https://s3.amazonaws.com/statist/home_page/dad.jpeg') %>
-              </a>
-            </div>
-          </li>
-          <li class="list_item">
-            <div class="list_item_content">
-              <span>Ersättning, 1000:-</span>
-              <a href="#">
-                <h3>Statister i alla åldrar sökes till reklamfilmsinspelning. </h3>
-              </a>
-              <a href="#" class="read_more">Läs mer</a>
-            </div>
-            <div class="list_item_image">
-              <a href="#">
-                <%= image_tag('https://s3.amazonaws.com/statist/home_page/film.jpeg') %>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
-</div>
   <section>
     <div class="movie_container">
       <div class="movie_section">
@@ -103,16 +106,7 @@
           	<path class="btn_play" d="M256,0C114.8,0,0,114.8,0,256s114.8,256,256,256s256-114.8,256-256S397.2,0,256,0z M256,494.9
           		C124.3,494.9,17.1,387.7,17.1,256S124.3,17.1,256,17.1S494.9,124.3,494.9,256S387.7,494.9,256,494.9z"/>
           </g>
-          <style type="text/css">
-          	#Capa_1, .btn_play{
-          	  fill: #FFFFFF!important;
-              stroke: #FFFFFF!important;
-              stroke-width: 0!important;
-              stroke-miterlimit: 0!important;
-            }
-          </style>
           </svg>
-
           <h4>
             Statist ❤ Solsidan
           </h4>
@@ -127,9 +121,36 @@
       </div>
     </div>
   </section>
-<div class="container home">
 
-</div>
+  <div class="container">
+    <section>
+      <div class="application_section flex_w">
+        <div class="application_content half">
+          <div class="intro text_left">
+            <h2>Ladda ner våran app</h2>
+            <p>
+              Ladda ner våran iPhone eller Android app så du alltid är uppdaterad.
+            </p>
+            <ul>
+              <li>Sök jobb direkt i appen</li>
+              <li>Få uppdateringar om nya jobb möjligheter</li>
+              <li>Uppdatera din blogg direkt i appen</li>
+            </ul>
+            <a href="#" class="btn btn_with_icon">
+              <i class="icon ion-social-android"></i> Ladda ner Android
+            </a>
+            <a href="#" class="btn btn_with_icon">
+              <i class="icon ion-social-apple"></i> Ladda ner Apple
+            </a>
+          </div>
+        </div>
+        <div class="application_image half">
+          <%= image_tag('https://s3.amazonaws.com/statist/home_page/iPhone.png') %>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
 
 <%= render 'layouts/footer' %>
 
@@ -158,5 +179,26 @@
     $(".movie_popup").css("display", "none");
   });
 
+  $("#open_mobile_menu").click(function() {
+    $("#open_mobile_menu").css("display", "none");
+    $("#close_mobile_menu").css("display", "block");
+    $("#mobile_menu").css("display", "block");
+    $("body").css("overflow", "hidden");
+    $(".mobile_navigation").addClass("mobile_friendly");
+  });
+
+  $("#close_mobile_menu").click(function() {
+    $("#close_mobile_menu").css("display", "none");
+    $("#open_mobile_menu").css("display", "block");
+    $("body").css("overflow", "auto");
+    $("#mobile_menu").css("display", "none");
+    $(".mobile_navigation").removeClass("mobile_friendly");
+  });
+
+  $( document ).on( 'keydown', function ( e ) {
+      if ( e.keyCode === 27 ) { // ESC
+        $(".movie_popup").css("display", "none");
+      }
+  });
 
 </script>

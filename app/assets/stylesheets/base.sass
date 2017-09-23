@@ -41,6 +41,13 @@ p
 a
   text-decoration: none
 
+// svg
+#Capa_1, .btn_play
+  fill: #FFFFFF!important
+  stroke: #FFFFFF!important
+  stroke-width: 0!important
+  stroke-miterlimit: 0!important
+
 .btn
   border: 1px solid $details-color
   background: $white-color
@@ -63,9 +70,10 @@ a
   &:hover
     color: $white-color
     background: $green-color
+    border: 1px solid $green-color
     transition: .5s all
 
-.btn_facebook
+.btn_with_icon
   transition: .5s all
   color: $gray-color
   i
@@ -77,6 +85,9 @@ a
 
 .text_green, .active_nav
   color: $green-color
+
+.text_left
+  text-align: left
 
 .active_menu
   display: block!important
@@ -101,6 +112,10 @@ a
   margin: auto
   width: 100%
 
+.flex_w
+  display: flex
+  flex-wrap: wrap
+
 
 .container
   @extend .base_length
@@ -109,12 +124,15 @@ a
   h2
     font-weight: $bold
     font-size: $font-size-h2
+    margin-bottom: 22px
   p
-    margin-top: 22px
     font-size: $font-size-h4
     line-height: $font-size-h4 * 1.5
     color: $gray-color
-    padding: 0 20px
+    padding: 0 20px 20px
+
+.mobile_navigation
+  display: none
 
 nav, footer
   a
@@ -135,7 +153,6 @@ nav, footer
         align-items: center
         li
           width: 33%
-          a
         .menu_main_nav
           a
             margin-right: 15px
@@ -147,17 +164,12 @@ nav, footer
           align-items: center
           position: relative
           height: 70px
-          &:hover .slide_in_logo
-            transition: .5s
-            right: 80px
           a
             margin: auto
           svg.static_logo
             width: 160px
-            background: $white-color
             z-index: 999
             padding: 3px
-
         li.call_to_action
           text-align: right
           a
@@ -192,47 +204,44 @@ nav, footer
           color: $gray-color
 section
   .hero_section
-    display: flex
-    flex-wrap: wrap
     .hero
       width: 50%
     .hero_content
       padding-right: 50px
-      form
-        margin-top: 30px
-        padding: 0 100px 0 0
-        input
-          outline: none
-          width: 100%
-          padding: 10px 15px
-          font-size: $font-size-h5
-          margin-bottom: 5px
-          border-radius: $border-normal
-          border: 1px solid $details-color
-          &::-webkit-input-placeholder
-            color: $gray-color
-        .buttons
-          margin-top: 10px
-        .register
-          color: $gray-color
-          margin-top: 15px
-          display: block
-          font-size: $font-size-button
-          font-style: italic
-          a
-            color: $green-color
       h1
         margin-top: 100px
         font-size: $font-size-h1-special * 0.9
         line-height: $font-size-h1-special
         font-weight: $bold
+        margin-bottom: 22px
       p
-        margin-top: 22px
+        margin-bottom: 30px
         font-size: $font-size-h3
         line-height: $font-size-h3 * 1.5
         color: $gray-color
-
-
+      form
+        padding: 0 100px 0 0
+        .input_fields
+          margin-bottom: 10px
+          input
+            outline: none
+            width: 100%
+            padding: 10px 15px
+            font-size: $font-size-h5
+            margin-bottom: 5px
+            border-radius: $border-normal
+            border: 1px solid $details-color
+            &::-webkit-input-placeholder
+              color: $gray-color
+        .buttons
+          margin-bottom: 15px
+        .register
+          color: $gray-color
+          display: block
+          font-size: $font-size-button
+          font-style: italic
+          a
+            color: $green-color
   .hero_image
     height: 550px
     background: url("https://s3.amazonaws.com/statist/home_page/water_camera.png")
@@ -247,10 +256,6 @@ section
     max-width: 550px
     margin: auto
     text-align: center
-    h2
-    p
-    a
-      margin-top: 20px
   .list
     margin-top: 50px
     ul
@@ -273,7 +278,7 @@ section
             font-size: $font-size-button
             color: $gray-color
             display: block
-            margin-bottom: 15px
+            margin: 5px 0 10px
           a
             h3
               font-family: $calluna
@@ -338,6 +343,7 @@ section
     left: 0
     display: none
     text-align: center
+    z-index: 999
     .movie_popup_video
       display: flex
       width: 100%
@@ -355,6 +361,33 @@ section
       color: $gray-color
       cursor: pointer
 
+.application_section
+  max-width: 900px
+  margin: auto
+  .half
+    width: 50%
+    padding: 80px 0
+  .application_content
+    display: flex
+    align-items: center
+    .intro
+      p
+        max-width: 340px
+        padding: 0 0 20px 0
+      ul
+        list-style: disc
+        padding: 0 0 20px 20px
+        li
+          font-family: $calluna
+          margin: 15px 0
+          font-size: $font-size-h5
+  .application_image
+    text-align: left
+    padding-left: 25px
+    img
+      max-height: 520px
+      max-width: 100%
+      object-fit: contain
 
 footer
   nav
@@ -362,3 +395,195 @@ footer
       .primary_nav_full
         border-bottom: 0
         border-top: 1px solid $details-color
+        .logo
+          svg
+            height: 50px
+
+
+@media only screen and (max-width: 1200px)
+  .container
+    padding: 0 20px
+
+@media only screen and (max-width: 850px)
+  section
+    .hero_section
+      display: block
+      .hero
+        width: 100%
+      .hero_content
+        h1
+          margin-top: 50px
+      .hero_image
+        display: none
+  .work_section
+    .list
+      ul
+        display: block
+        .list_item
+          width: calc(100% - 100px)
+          margin: 50px
+
+@media only screen and (max-width: 720px)
+  .home
+    padding-top: 81px
+  nav
+    .navigation
+      .mobile_navigation
+        display: flex
+        padding: 0
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        background: $white-color
+        z-index: 9
+        ul.primary_nav
+          padding: 5px 15px
+          li.logo
+            text-align: left
+            display: block
+            margin-right: auto
+            a
+              margin: 0!important
+              svg.static_logo
+                width: auto!important
+                height: 70px
+          li.call_to_action
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            width: 66%
+            a.burger_menu
+              padding: 10px
+              font-size: $font-size-paragraph
+              width: 25px
+              text-align: center
+            #close_mobile_menu
+              display: none
+              font-size: $font-size-h4
+      .mobile_friendly
+        display: block
+      .mobile_menu
+        width: 100%
+        height: 100vh
+        background: $white-color
+        display: none
+        padding: 0
+        #nav_country, #nav_search
+          display: none
+        .search_mobile
+          position: relative
+          input
+            width: 100%
+            padding: 15px 20px 15px 50px
+            font-size: $font-size-paragraph
+            color: $gray-color
+            font-weight: $light
+            outline: none
+            border-top: 1px solid $details-color
+            border-bottom: 1px solid $details-color
+            border-right: 0
+            border-left: 0
+          i
+            position: absolute
+            top: 20px
+            left: 25px
+            color: $gray-color
+        a
+          width: 100%
+          display: block
+          padding: 15px 25px
+          font-size: $font-size-paragraph
+          border-bottom: 1px solid $details-color
+          font-weight: $light
+      .mobile_sign_up
+        position: fixed
+        bottom: 0
+        left: 0
+        width: 100%
+        background: $green-color
+        a
+          padding: 15px
+          text-align: center
+          font-weight: $bold
+          color: $white-color
+          text-transform: uppercase
+.primary_navigation
+  display: none
+  .application_section
+    display: block
+    .half
+      width: calc(100% - 100px)
+      margin: 0 50px
+      padding: 40px 0
+    .application_content
+      display: block
+@media only screen and (max-width: 580px)
+  section
+    .hero_section
+      .hero_content
+        padding-right: 0
+        form
+          padding-right: 0
+
+  .work_section
+    .list
+      ul
+        .list_item
+          width: calc(100% - 20px)
+          margin: 20px 10px
+          &:hover
+            transform: none
+  .movie_container
+    .movie_popup
+      padding: 20px
+      .movie_popup_video
+      #close_movie_popup
+        bottom: 0
+        left: 0
+        width: 100%
+        top: auto
+        background: $white-color
+        border-top: 1px solid $details-color
+    .movie_section
+      .playvideo
+        top: 0
+        width: 100%
+        left: 0
+        display: flex
+        align-items: center
+        justify-content: center
+  .application_section
+    display: block
+    .half
+      width: 100%
+      padding: 40px 0
+      text-align: center
+    .application_content
+      display: block
+      .intro
+        text-align: center
+        a
+          margin: 5px 0
+        p
+          margin: auto
+        ul
+          padding: 0 0 20px 0
+          list-style: none
+  footer
+    .navigation
+      .primary_nav_full
+        ul.footer_navigation
+          display: block
+          li
+            width: 100%
+            text-align: center
+            padding: 20px 0
+          li.menu_main_nav
+            a
+              font-size: $font-size-h4
+              margin: 0 25px
+          li.call_to_action
+            text-align: center
+          li.logo
+            height: auto

@@ -1,56 +1,39 @@
 <nav>
   <div class="navigation">
-    <div class="primary_nav_full">
-      <ul class="primary_nav primary_navigation">
+    <div class="primary_nav_full primary_navigation">
+      <ul class="primary_nav">
         <li class="menu_main_nav">
-          <a href="Javascript:void(0)" class="country" id="nav_country">
-            <i class="icon ion-earth"></i>
-          </a>
-          <a href="Javascript:void(0)" class="search" id="nav_search">
-            <i class="icon ion-ios-search-strong"></i>
-          </a>
-          <a href="Javascript:void(0)" class="work" id="nav_work">
-            Jobb
-          </a>
-          <a href="Javascript:void(0)" class="service" id="nav_service">
-            Tjänster
-          </a>
-          <a href="Javascript:void(0)" class="blog" id="nav_blog">
-            Blogg
-          </a>
+          <%= render 'layouts/menu_list' %>
         </li>
         <li class="logo">
           <a href="#">
             <svg version="1.1" id="Lager_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 viewBox="0 0 1000 300" class="static_logo" style="enable-background:new 0 0 1000 300;" xml:space="preserve">
-            <style type="text/css">
-            	.slide_in_logo_path{fill:#333333!important;stroke-width:0!important;stroke-miterlimit:0!important;}
-            </style>
             <g>
-            	<path class="slide_in_logo_path" d="M96,62.6c15.2,0,22.9,7.5,36.3,7.5c4.8,0,7.2-1.4,8.9-3.9c0.7-1,1-1.4,1.7-1.4c0.7,0,1,0.5,1,1.4v51.3
+            	<path class="static_logo_path" d="M96,62.6c15.2,0,22.9,7.5,36.3,7.5c4.8,0,7.2-1.4,8.9-3.9c0.7-1,1-1.4,1.7-1.4c0.7,0,1,0.5,1,1.4v51.3
             		c0,1-0.2,1.4-1.2,1.4c-1,0-1.2-0.5-1.2-1.4C139.1,82.3,119.1,65,96,65c-18.3,0-30.8,9.4-30.8,27.2c0,15.6,6.7,27.4,40.2,43.6
             		c34.7,16.6,49.1,33.5,49.1,56.3c0,29.4-24.3,52.5-56.8,52.5c-20,0-31.5-8.7-43.3-8.7c-5.1,0-7.9,1.7-10.1,4.3c-0.7,1-1,1.4-1.7,1.4
             		s-1-0.5-1-1.4v-60.6c0-1,0.2-1.4,1.2-1.4c1,0,1.2,0.5,1.2,1.4c2.4,38.3,23.8,62.6,53.9,62.6c25.5,0,39.5-13.2,39.5-33.7
             		c0-18.8-9.1-28.9-45.7-46.7c-33.2-16.1-43.6-33.5-43.6-54.9C48.1,82.6,66.6,62.6,96,62.6z"/>
-            	<path class="slide_in_logo_path" d="M198.5,239.3h27.2V67.2h-4.8c-30.3,0-45.5,25-47.9,58.5c0,1-0.2,1.4-1.2,1.4c-1,0-1.2-0.5-1.2-1.4V67.2
+            	<path class="static_logo_path" d="M198.5,239.3h27.2V67.2h-4.8c-30.3,0-45.5,25-47.9,58.5c0,1-0.2,1.4-1.2,1.4c-1,0-1.2-0.5-1.2-1.4V67.2
             		c0-2.2,0.7-2.4,2.6-2.4h134.5c1.9,0,2.6,0.5,2.6,2.4v58.5c0,1.2-0.2,1.4-1.2,1.4s-1.2-0.2-1.2-1.4c-2.4-33.5-16.8-58.5-47.2-58.5
             		h-5.5v172.1h27.4c1,0,1.4,0.2,1.4,1.2c0,1-0.5,1.2-1.4,1.2h-84.2c-1,0-1.4-0.2-1.4-1.2C197.1,239.5,197.5,239.3,198.5,239.3z"/>
-            	<path class="slide_in_logo_path" d="M307.3,239.3h19.3l56.3-174c0.7-1.9,1.2-2.9,2.4-2.9c1,0,1.4,1,2.2,2.9l56.1,174h21.2c1,0,1.4,0.2,1.4,1.2
+            	<path class="static_logo_path" d="M307.3,239.3h19.3l56.3-174c0.7-1.9,1.2-2.9,2.4-2.9c1,0,1.4,1,2.2,2.9l56.1,174h21.2c1,0,1.4,0.2,1.4,1.2
             		c0,1-0.5,1.2-1.4,1.2h-81.8c-1,0-1.4-0.2-1.4-1.2c0-1,0.5-1.2,1.4-1.2h31.3l-15.9-50.1h-52.5l-16.4,50.1h25.3c1,0,1.4,0.2,1.4,1.2
             		c0,1-0.5,1.2-1.4,1.2h-47.4c-1,0-1.4-0.2-1.4-1.2C305.8,239.5,306.3,239.3,307.3,239.3z M346.5,186.8h51L373,108.6h-1L346.5,186.8z
             		"/>
-            	<path class="slide_in_logo_path" d="M491.4,239.3h27.2V67.2h-4.8c-30.3,0-45.5,25-47.9,58.5c0,1-0.2,1.4-1.2,1.4c-1,0-1.2-0.5-1.2-1.4V67.2
+            	<path class="static_logo_path" d="M491.4,239.3h27.2V67.2h-4.8c-30.3,0-45.5,25-47.9,58.5c0,1-0.2,1.4-1.2,1.4c-1,0-1.2-0.5-1.2-1.4V67.2
             		c0-2.2,0.7-2.4,2.6-2.4h134.5c1.9,0,2.6,0.5,2.6,2.4v58.5c0,1.2-0.2,1.4-1.2,1.4s-1.2-0.2-1.2-1.4c-2.4-33.5-16.8-58.5-47.2-58.5
             		h-5.5v172.1h27.4c1,0,1.4,0.2,1.4,1.2c0,1-0.5,1.2-1.4,1.2h-84.2c-1,0-1.4-0.2-1.4-1.2C489.9,239.5,490.4,239.3,491.4,239.3z"/>
-            	<path class="slide_in_logo_path" d="M617,239.3H638V67.2h-20.2c-1,0-1.4-0.2-1.4-1.2c0-1,0.5-1.2,1.4-1.2h70c1,0,1.4,0.2,1.4,1.2
+            	<path class="static_logo_path" d="M617,239.3H638V67.2h-20.2c-1,0-1.4-0.2-1.4-1.2c0-1,0.5-1.2,1.4-1.2h70c1,0,1.4,0.2,1.4,1.2
             		c0,1-0.5,1.2-1.4,1.2h-20.2v172.1h20.9c1,0,1.4,0.2,1.4,1.2c0,1-0.5,1.2-1.4,1.2H617c-1,0-1.4-0.2-1.4-1.2
             		C615.6,239.5,616,239.3,617,239.3z"/>
-            	<path class="slide_in_logo_path" d="M763.3,62.6c15.2,0,22.9,7.5,36.3,7.5c4.8,0,7.2-1.4,8.9-3.9c0.7-1,1-1.4,1.7-1.4c0.7,0,1,0.5,1,1.4v51.3
+            	<path class="static_logo_path" d="M763.3,62.6c15.2,0,22.9,7.5,36.3,7.5c4.8,0,7.2-1.4,8.9-3.9c0.7-1,1-1.4,1.7-1.4c0.7,0,1,0.5,1,1.4v51.3
             		c0,1-0.2,1.4-1.2,1.4s-1.2-0.5-1.2-1.4C806.4,82.3,786.4,65,763.3,65c-18.3,0-30.8,9.4-30.8,27.2c0,15.6,6.7,27.4,40.2,43.6
             		c34.7,16.6,49.1,33.5,49.1,56.3c0,29.4-24.3,52.5-56.8,52.5c-20,0-31.5-8.7-43.3-8.7c-5.1,0-7.9,1.7-10.1,4.3c-0.7,1-1,1.4-1.7,1.4
             		c-0.7,0-1-0.5-1-1.4v-60.6c0-1,0.2-1.4,1.2-1.4c1,0,1.2,0.5,1.2,1.4c2.4,38.3,23.8,62.6,53.9,62.6c25.5,0,39.5-13.2,39.5-33.7
             		c0-18.8-9.1-28.9-45.7-46.7c-33.2-16.1-43.6-33.5-43.6-54.9C715.4,82.6,734,62.6,763.3,62.6z"/>
-            	<path class="slide_in_logo_path" d="M865.9,239.3H893V67.2h-4.8c-30.3,0-45.5,25-47.9,58.5c0,1-0.2,1.4-1.2,1.4c-1,0-1.2-0.5-1.2-1.4V67.2
+            	<path class="static_logo_path" d="M865.9,239.3H893V67.2h-4.8c-30.3,0-45.5,25-47.9,58.5c0,1-0.2,1.4-1.2,1.4c-1,0-1.2-0.5-1.2-1.4V67.2
             		c0-2.2,0.7-2.4,2.6-2.4h134.5c1.9,0,2.6,0.5,2.6,2.4v58.5c0,1.2-0.2,1.4-1.2,1.4s-1.2-0.2-1.2-1.4c-2.4-33.5-16.8-58.5-47.2-58.5
             		h-5.5v172.1h27.4c1,0,1.4,0.2,1.4,1.2c0,1-0.5,1.2-1.4,1.2h-84.2c-1,0-1.4-0.2-1.4-1.2C864.4,239.5,864.9,239.3,865.9,239.3z"/>
             </g>
@@ -67,6 +50,55 @@
         </li>
       </ul>
     </div>
+    <div class="primary_nav_full mobile_navigation">
+      <ul class="primary_nav">
+        <li class="logo">
+          <a href="/">
+            <svg version="1.1" class="static_logo" id="Lager_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+            <style type="text/css">
+              .circle_svg{fill:none;stroke:#333333;stroke-width:15;stroke-miterlimit:10;}
+              .circle_svg_1{fill:#333333;}
+            </style>
+            <circle class="circle_svg" cx="504.1" cy="494.9" r="437.7"/>
+            <g><path class="circle_svg_1" d="M499.6,298.2c32.8,0,49.4,16.1,78.6,16.1c10.4,0,15.6-3.1,19.3-8.3c1.6-2.1,2.1-3.1,3.6-3.1
+                c1.6,0,2.1,1,2.1,3.1v110.8c0,2.1-0.5,3.1-2.6,3.1c-2.1,0-2.6-1-2.6-3.1c-5.2-76-48.4-113.4-98.3-113.4
+                c-39.5,0-66.6,20.3-66.6,58.8c0,33.8,14.6,59.3,86.9,94.2c74.9,35.9,106.1,72.3,106.1,121.8c0,63.5-52.6,113.4-122.8,113.4
+                c-43.2,0-68.2-18.7-93.7-18.7c-10.9,0-17.2,3.6-21.9,9.4c-1.6,2.1-2.1,3.1-3.6,3.1c-1.6,0-2.1-1-2.1-3.1V551.1
+                c0-2.1,0.5-3.1,2.6-3.1c2.1,0,2.6,1,2.6,3.1c5.2,82.7,51.5,135.3,116.6,135.3c55.2,0,85.3-28.6,85.3-72.8
+                c0-40.6-19.8-62.4-98.9-100.9c-71.8-34.9-94.2-72.3-94.2-118.6C396.1,341.4,436.2,298.2,499.6,298.2z"/></g>
+            </svg>
+          </a>
+        </li>
+        <li class="call_to_action">
+          <a href="Javascript:void(0)" class="signin btn btn_green">
+            Logga in
+          </a>
+          <a href="Javascript:void(0)" class="burger_menu" id="open_mobile_menu">
+            <i class="icon ion-navicon"></i>
+          </a>
+          <a href="Javascript:void(0)" class="burger_menu" id="close_mobile_menu">
+            <i class="icon ion-ios-close-empty"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="mobile_menu" id="mobile_menu">
+        <div class="search_mobile">
+          <input type="text" placeholder="Sök här...">
+          <i class="icon ion-ios-search-strong"></i>
+        </div>
+        <%= render 'layouts/menu_list' %>
+        <div class="mobile_sign_up">
+          <a href="#">
+            Bli medlem
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
   <div class="dropdown_nav_full" id="dropdown_search">
         <ul class="dropdown_nav">
           <input type="text" name="" value="" placeholder="Sök här">

@@ -1,0 +1,27 @@
+<%= form_with(model: emoji, local: true) do |form| %>
+  <% if emoji.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(emoji.errors.count, "error") %> prohibited this emoji from being saved:</h2>
+
+      <ul>
+      <% emoji.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :emoji_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :icon %>
+    <%= form.text_field :icon, id: :emoji_icon %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
